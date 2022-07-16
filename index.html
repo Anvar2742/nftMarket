@@ -12,36 +12,82 @@
 </head>
 
 <body>
-    <header class="header">
-        <a href="#" class="logo">
-            <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                    d="M0 30.6C5.63333 30.6 10.2 26.0332 10.2 20.4C10.2 14.7667 5.63333 10.2 0 10.2V17.3399C1.68998 17.3399 3.05998 18.7099 3.05998 20.4C3.05998 22.09 1.68998 23.46 0 23.46V30.6Z"
-                    fill="#76DECC" />
-                <path
-                    d="M33.9997 13.6001C32.2567 13.0479 30.4005 12.75 28.4747 12.75C18.3816 12.75 10.1997 20.9321 10.1997 31.025C10.1997 32.0381 10.2821 33.0319 10.4406 34H21.7955C21.3901 33.0913 21.1648 32.0845 21.1648 31.025C21.1648 26.9878 24.4375 23.715 28.4747 23.715C30.6812 23.715 32.6593 24.6927 33.9997 26.2384V13.6001Z"
-                    fill="#EA6CBC" />
-                <path
-                    d="M1.79346 0C2.63911 7.64992 9.12477 13.6001 17.0001 13.6001C24.8753 13.6001 31.361 7.64992 32.2067 0H21.2649C20.5894 1.69339 18.9344 2.88999 17.0001 2.88999C15.0657 2.88999 13.4108 1.69339 12.7352 0H1.79346Z"
-                    fill="#2A27C9" />
-            </svg>
-            <span>NFT market</span>
-        </a>
+    <div class="hero__wrap">
+        <header class="header">
+            <a href="#" class="logo">
+                <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M0 30.6C5.63333 30.6 10.2 26.0332 10.2 20.4C10.2 14.7667 5.63333 10.2 0 10.2V17.3399C1.68998 17.3399 3.05998 18.7099 3.05998 20.4C3.05998 22.09 1.68998 23.46 0 23.46V30.6Z"
+                        fill="#76DECC" />
+                    <path
+                        d="M33.9997 13.6001C32.2567 13.0479 30.4005 12.75 28.4747 12.75C18.3816 12.75 10.1997 20.9321 10.1997 31.025C10.1997 32.0381 10.2821 33.0319 10.4406 34H21.7955C21.3901 33.0913 21.1648 32.0845 21.1648 31.025C21.1648 26.9878 24.4375 23.715 28.4747 23.715C30.6812 23.715 32.6593 24.6927 33.9997 26.2384V13.6001Z"
+                        fill="#EA6CBC" />
+                    <path
+                        d="M1.79346 0C2.63911 7.64992 9.12477 13.6001 17.0001 13.6001C24.8753 13.6001 31.361 7.64992 32.2067 0H21.2649C20.5894 1.69339 18.9344 2.88999 17.0001 2.88999C15.0657 2.88999 13.4108 1.69339 12.7352 0H1.79346Z"
+                        fill="#2A27C9" />
+                </svg>
+                <span>NFT market</span>
+            </a>
 
-        <nav class="header__nav">
-            <ul>
-                <li><a href="#">Auctions</a></li>
-                <li><a href="#">Roadmap</a></li>
-                <li><a href="#">Discover</a></li>
-                <li><a href="#">Community</a></li>
-            </ul>
-        </nav>
+            <nav class="header__nav">
+                <ul>
+                    <li><a href="#">Auctions</a></li>
+                    <li><a href="#">Roadmap</a></li>
+                    <li><a href="#">Discover</a></li>
+                    <li><a href="#">Community</a></li>
+                </ul>
+            </nav>
 
-        <div class="header__btns">
-            <button class="btn secondary-btn">Contact</button>
-            <button class="btn primary-btn">My account</button>
-        </div>
-    </header>
+            <div class="header__btns">
+                <button class="btn secondary-btn">Contact</button>
+                <button class="btn primary-btn">My account</button>
+            </div>
+        </header>
+
+        <section class="hero">
+            <div class="container hero__container">
+                <div class="hero__info">
+                    <h2 class="subtitle small-text">Non Fungible Tokens</h2>
+                    <h1>A new NFT <span>Experience</span></h1>
+                    <h2 class="subtitle medium-text">Discover, collect and sell</h2>
+                    <div class="filter">
+                        <input type="text" name="filter" id="filter" placeholder="Items, collections and creators">
+                        <div class="filter__right">
+                            <select name="category" id="category">
+                                <option value="category1">Category1</option>
+                                <option value="category2">Category2</option>
+                                <option value="category3">Category3</option>
+                                <option value="category4">Category4</option>
+                            </select>
+                            <button class="search_btn reset_btn">
+                                <svg width="25" height="24" viewBox="0 0 25 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <line x1="1.93934" y1="22.9393" x2="17.4957" y2="7.38299" stroke="#2A27C9"
+                                        stroke-width="3" />
+                                    <circle cx="15.5" cy="9.5" r="8" fill="white" stroke="#2A27C9" stroke-width="3" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero__partners">
+                    <a href="#" class="partner__item">
+                        <img src="./img/icon/Ritter Sport.svg" alt="Ritter Sports">
+                    </a>
+                    <a href="#" class="partner__item">
+                        <img src="./img/icon/Nike.svg" alt="Nike">
+                    </a>
+                    <a href="#" class="partner__item">
+                        <img src="./img/icon/Adidas.svg" alt="Adidas">
+                    </a>
+                    <a href="#" class="partner__item">
+                        <img src="./img/icon/New Holland.svg" alt="New Holland">
+                    </a>
+                </div>
+            </div>
+        </section>
+    </div>
 </body>
 
 </html>

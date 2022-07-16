@@ -377,3 +377,20 @@ template {
 [hidden] {
   display: none;
 }
+
+/**
+   * Remove the outline from everything.
+   */
+
+*:focus {
+  outline: none;
+}
+
+/**
+   * Reset button styles
+   */
+
+.reset_btn {
+  background: unset;
+  border: unset;
+}

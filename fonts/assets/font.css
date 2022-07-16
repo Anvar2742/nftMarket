@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'Sora-SemiBold';
+  src: url('Sora-SemiBold.eot');
+  src: url('Sora-SemiBold.eot?#iefix') format('embedded-opentype'),
+       url('Sora-SemiBold.svg#Sora-SemiBold') format('svg'),
+       url('Sora-SemiBold.ttf') format('truetype'),
+       url('Sora-SemiBold.woff') format('woff'),
+       url('Sora-SemiBold.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
