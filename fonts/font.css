@@ -1,0 +1,29 @@
+@font-face {
+  font-family: 'Sora';
+  src: url('Sora-Regular.svg#Sora-Regular') format('svg'),
+    url('Sora-Regular.ttf') format('truetype'),
+    url('Sora-Regular.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('Inter-Regular.svg#Inter-Regular') format('svg'),
+    url('Inter-Regular.ttf') format('truetype'),
+    url('Inter-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Sora';
+  src: url('Sora-Bold.eot');
+  src: url('Sora-Bold.eot?#iefix') format('embedded-opentype'),
+    url('Sora-Bold.svg#Sora-Bold') format('svg'),
+    url('Sora-Bold.ttf') format('truetype'),
+    url('Sora-Bold.woff') format('woff'),
+    url('Sora-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}

@@ -1,0 +1,137 @@
+:root {
+    --dark100: #060714;
+    --dark90: #262840;
+    --dark80: #7780A1;
+    --sora: 'Sora', sans-serif;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+}
+
+/* Config */
+
+.btn {
+    background: unset;
+    border: unset;
+    padding: 16px 24px;
+    border-radius: 12px;
+    font-family: var(--sora);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    cursor: pointer;
+    box-shadow: inset -4px -4px 4px rgba(0, 0, 0, 0.1), inset 4px 4px 4px rgba(255, 255, 255, 0.1);
+}
+
+.primary-btn {
+    background: linear-gradient(104.42deg, #4745D0 0%, #2A27C9 60.23%);
+    color: #fff;
+}
+
+.secondary-btn {
+    border: 2px solid var(--dark80);
+    color: var(--dark80);
+}
+
+/* Config */
+
+/* Typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Sora", sans-serif;
+    color: var(--dark100);
+    letter-spacing: 0.2px;
+    font-weight: 600;
+}
+
+h1 {
+    font-size: 64px;
+}
+
+h2 {
+    font-size: 48px;
+    line-height: 115%;
+}
+
+h3 {
+    font-size: 40px;
+    line-height: 125%;
+}
+
+h4 {
+    font-size: 36px;
+    line-height: 45px;
+}
+
+h5 {
+    font-size: 32px;
+    line-height: 40px;
+}
+
+h6 {
+    font-size: 20px;
+    line-height: 25px;
+}
+
+/* Typography */
+
+/* Header */
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+    height: 117px;
+    -webkit-box-shadow: 0px 6px 6px -2px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 6px 6px -2px rgba(0, 0, 0, 0.5);
+}
+
+.logo {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    max-width: 213px;
+}
+
+.logo span {
+    font-family: var(--sora);
+    font-weight: 700;
+    font-size: 27px;
+    letter-spacing: 0.2px;
+    color: var(--dark100);
+    margin-left: 18px;
+    white-space: nowrap;
+}
+
+.header__nav ul {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+}
+
+.header__nav li:not(:first-child) {
+    margin-left: 64px;
+}
+
+.header__nav a {
+    font-family: var(--sora);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    color: var(--dark80);
+    text-decoration: none;
+}
+
+.header__btns .btn:last-child {
+    margin-left: 16px;
+}
+
+/* Header */
