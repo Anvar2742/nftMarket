@@ -1,14 +1,17 @@
 var circles = document.getElementById('circles')
 var startCircle = document.getElementById('startCircle')
 var startWidth = startCircle.offsetWidth
-var size = 150,
+var size = 200,
     increasingSize = size
 var searchBtn = document.getElementById('searchBtn')
 
-searchBtn.addEventListener('click', function () {
+window.addEventListener("load", function () {
     startCircle.style.background = '#8c63fd'
     for (let i = 1; i < circles.children.length; i++) {
         const el = circles.children[i]
+        var elLast = circles.children[circles.children.length - i]
+
+        elLast.style.zIndex = i
 
         // Increase size of circle
         increasingSize += size
