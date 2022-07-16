@@ -95,8 +95,10 @@ h6 {
 /* Typography */
 
 .hero__wrap {
+    overflow: hidden;
     height: 100vh;
-    background: url(../img/hero-2.png) 100%/cover no-repeat #8c63fd;
+    /* background: url(../img/hero-2.png) 100%/cover no-repeat #8c63fd; */
+    position: relative;
 }
 
 /* Header */
@@ -263,3 +265,27 @@ h6 {
 }
 
 /* Hero */
+
+/* Circles animation */
+
+.circle {
+    width: 300px;
+    height: 300px;
+    background: #8c63fd;
+    border: 3px dashed #F7F8FC;
+    position: absolute;
+    border-radius: 50%;
+    left: 50%;
+    top: 63%;
+    transform: translate(-50%, -50%);
+    transition: .3s ease;
+}
+
+.header,
+.hero,
+.hero__partners {
+    z-index: 2;
+    position: relative;
+}
+
+/* Circles animation */
