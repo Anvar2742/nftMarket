@@ -4,24 +4,26 @@ var startWidth = startCircle.offsetWidth
 var size = 150,
     increasingSize = size
 var searchBtn = document.getElementById('searchBtn')
+// var background = '#fff';
+var border = '3px solid rgb(223 223 223)';
 
 window.addEventListener("load", function () {
-    startCircle.style.background = '#8c63fd'
-    for (let i = 1; i < circles.children.length; i++) {
-        const el = circles.children[i]
-        var elLast = circles.children[circles.children.length - i]
+    setTimeout(() => {
+        // startCircle.style.background = background
+        startCircle.style.background = border
+        for (let i = 1; i < circles.children.length; i++) {
+            const el = circles.children[i]
+            var elLast = circles.children[circles.children.length - i]
 
-        // Increase size of circle
-        increasingSize += size
-        elLast.style.width = increasingSize + 'px'
-        elLast.style.height = increasingSize + 'px'
+            // Increase size of circle
+            increasingSize += size
+            elLast.style.width = increasingSize + 'px'
+            elLast.style.height = increasingSize + 'px'
 
-        // Decrease opacity of circle
-        if(100 - (i * 10) <= 0) {
-            elLast.style.opacity = 10 + '%'
-        } else {
+            // Decrease opacity of circle
             elLast.style.opacity = 100 - (i * 10) + '%'
+            // elLast.style.background = background
+            elLast.style.border = border
         }
-        elLast.style.background = '#8c63fd'
-    }
+    }, 500);
 })
