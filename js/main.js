@@ -6,6 +6,7 @@ var size = 150,
 var searchBtn = document.getElementById('searchBtn')
 
 searchBtn.addEventListener('click', function () {
+    startCircle.style.background = '#8c63fd'
     for (let i = 1; i < circles.children.length; i++) {
         const el = circles.children[i]
 
@@ -17,5 +18,6 @@ searchBtn.addEventListener('click', function () {
         // Decrease opacity of circle
         var tenI = (i * 10)
         el.style.opacity = 100 - (i * 10) + '%'
+        el.style.background = '#8c63fd'
     }
 })
