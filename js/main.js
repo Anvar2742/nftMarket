@@ -1,7 +1,7 @@
 var circles = document.getElementById('circles')
 var startCircle = document.getElementById('startCircle')
 var startWidth = startCircle.offsetWidth
-var size = 200,
+var size = 150,
     increasingSize = size
 var searchBtn = document.getElementById('searchBtn')
 
@@ -11,16 +11,17 @@ window.addEventListener("load", function () {
         const el = circles.children[i]
         var elLast = circles.children[circles.children.length - i]
 
-        elLast.style.zIndex = i
-
         // Increase size of circle
         increasingSize += size
-        el.style.width = increasingSize + 'px'
-        el.style.height = increasingSize + 'px'
+        elLast.style.width = increasingSize + 'px'
+        elLast.style.height = increasingSize + 'px'
 
         // Decrease opacity of circle
-        var tenI = (i * 10)
-        el.style.opacity = 100 - (i * 10) + '%'
-        el.style.background = '#8c63fd'
+        if(100 - (i * 10) <= 0) {
+            elLast.style.opacity = 10 + '%'
+        } else {
+            elLast.style.opacity = 100 - (i * 10) + '%'
+        }
+        elLast.style.background = '#8c63fd'
     }
 })

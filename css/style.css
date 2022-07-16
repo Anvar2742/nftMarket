@@ -269,8 +269,8 @@ h6 {
 /* Circles animation */
 
 .circle {
-    width: 300px;
-    height: 300px;
+    width: 100px;
+    height: 100px;
     background: #fff;
     border: 3px dashed #F7F8FC;
     position: absolute;
@@ -278,7 +278,7 @@ h6 {
     left: 50%;
     top: 63%;
     transform: translate(-50%, -50%);
-    transition: .3s ease;
+    transition: .15s ease;
 }
 
 .header,
@@ -289,3 +289,7 @@ h6 {
 }
 
 /* Circles animation */
+
+.placeholder {
+    height: 100vh;
+}
