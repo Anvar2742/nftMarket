@@ -41,14 +41,21 @@ window.addEventListener("load", function () {
             el.classList.add('circle_shadow')
         }
     }, 1200);
+
+    var transition = .6
+    for (let i = 0; i < heroNfts.children.length - 3; i++) {
+        const el = heroNfts.children[i];
+
+        el.style.transition = transition + i / 10 + 's ease-out'
+    }
+
+    for (let i = 1, k = 0; i < heroNfts.children.length - 2; i++, k++) {
+        const el = heroNfts.children[heroNfts.children.length - i];
+
+        el.style.transition = transition + k / 10 + 's ease-out'
+    }
+
     setTimeout(() => {
         heroNfts.classList.add('floating__nfts')
     }, 1500);
-
-    // for (let i = 0; i < heroNfts.children.length; i++) {
-    //     const el = heroNfts.children[i];
-
-    //     // el.style.top = Math.round(Math.random() * 100) + "%"
-    //     // el.style.left = Math.round(Math.random() * 100) + "%"
-    // }
 })

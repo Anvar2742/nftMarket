@@ -262,7 +262,7 @@ h6 {
 }
 
 .hero__partners {
-    margin-bottom: 10px;
+    margin-bottom: 50px;
     display: flex;
     justify-content: space-between;
     max-width: 670px;
@@ -325,32 +325,26 @@ h6 {
 
 .hero__nft-item:first-child {
     left: 10%;
-    transition: .3s ease-out;
 }
 
 .hero__nft-item:nth-child(2) {
     left: 20%;
-    transition: .4s ease-out;
 }
 
 .hero__nft-item:nth-child(3) {
     left: 10%;
-    transition: .5s ease-out;
 }
 
 .hero__nft-item:nth-child(4) {
     right: 20%;
-    transition: .5s ease-out;
 }
 
 .hero__nft-item:nth-child(5) {
     right: 10%;
-    transition: .4s ease-out;
 }
 
 .hero__nft-item:nth-child(6) {
     right: 15%;
-    transition: .3s ease-out;
 }
 
 
