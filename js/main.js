@@ -64,7 +64,7 @@ const swiper = new Swiper('.swiper', {
     slidesPerView: 3,
     spaceBetween: 70,
     loop: true,
-    loopedSlides: 5,
+    // loopedSlides: 5,
     watchSlidesProgress: true,
     centerSlides: true,
 
