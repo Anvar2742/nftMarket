@@ -133,257 +133,285 @@
     </div>
 
     <section class="latest">
-        <div class="">
-            <h3>Latest live auctions</h3>
-            <div class="container__latest">
-                <div class="swiper swiper-latest">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide latest-slide">
-                            <img src="img/latest/Image.png" alt="Latest 1">
-                            <div class="latest__info">
-                                <div class="latest__head">
-                                    <h6>Vulputate felis purus viverra morbi facilisi eget</h6>
-                                    <p class="latest__price">
-                                        3.19 ETH
-                                    </p>
-                                </div>
-                                <p class="latest__time">
-                                    <svg width="15" height="17" viewBox="0 0 15 17" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M5.5 0.5C5.22386 0.5 5 0.723858 5 1C5 1.27614 5.22386 1.5 5.5 1.5H9.5C9.77614 1.5 10 1.27614 10 1C10 0.723858 9.77614 0.5 9.5 0.5H5.5ZM13.1563 2.42899C12.961 2.23373 12.6444 2.23373 12.4492 2.42899C12.2539 2.62426 12.2539 2.94084 12.4492 3.1361L13.8634 4.55031C14.0587 4.74558 14.3752 4.74558 14.5705 4.55031C14.7658 4.35505 14.7658 4.03847 14.5705 3.84321L13.1563 2.42899ZM7.5 4.5C7.22386 4.5 7 4.72386 7 5V10C7 10.2761 7.22386 10.5 7.5 10.5C7.77614 10.5 8 10.2761 8 10V5C8 4.72386 7.77614 4.5 7.5 4.5ZM7.5 16.5C11.366 16.5 14.5 13.366 14.5 9.5C14.5 5.63401 11.366 2.5 7.5 2.5C3.63401 2.5 0.5 5.63401 0.5 9.5C0.5 13.366 3.63401 16.5 7.5 16.5ZM7.5 15.5C4.18629 15.5 1.5 12.8137 1.5 9.5C1.5 6.18629 4.18629 3.5 7.5 3.5C10.8137 3.5 13.5 6.18629 13.5 9.5C13.5 12.8137 10.8137 15.5 7.5 15.5Z"
-                                            fill="#060714" />
-                                    </svg>
-                                    2:41 min left
-                                </p>
-                                <div class="latest__biding">
-                                    <div class="latest__avas">
-                                        <img src="img/latest-avas/01.png" alt="">
-                                        <img src="img/latest-avas/02.png" alt="">
-                                        <img src="img/latest-avas/03.png" alt="">
-                                        <img src="img/latest-avas/04.png" alt="">
-                                    </div>
-                                    <p class="latest__biding-num">
-                                        35 people are bidding
-                                    </p>
-                                    <div class="latest__fav">
-                                        <svg width="18" height="17" viewBox="0 0 18 17" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M4.83268 1C2.53185 1 0.666016 2.84667 0.666016 5.125C0.666016 6.96417 1.39518 11.3292 8.57268 15.7417C8.70125 15.8199 8.84885 15.8613 8.99935 15.8613C9.14985 15.8613 9.29745 15.8199 9.42602 15.7417C16.6035 11.3292 17.3327 6.96417 17.3327 5.125C17.3327 2.84667 15.4668 1 13.166 1C10.8652 1 8.99935 3.5 8.99935 3.5C8.99935 3.5 7.13352 1 4.83268 1Z"
-                                                stroke="#7780A1" stroke-linecap="round" stroke-linejoin="round" />
-                                        </svg>
-                                        120
-                                    </div>
-                                </div>
-                            </div>
+        <h3>Latest live auctions</h3>
+        <div class="container__latest">
+            <div class="swiper swiper-latest" id="swiperLatest">
+                <div class="swiper-wrapper" id="swiperWrap">
+                    <div class="swiper-slide latest-slide">
+                        <div class="latest__thumbnail_wrap">
+                            <img src="img/latest/Image.png" class="latest__thumbnail" alt="Latest 1">
                         </div>
-                        <div class="swiper-slide latest-slide">
-                            <img src="img/latest/Image.png" alt="Latest 1">
-                            <div class="latest__info">
-                                <div class="latest__head">
-                                    <h6>Vulputate felis purus viverra morbi facilisi eget</h6>
-                                    <p class="latest__price">
-                                        3.19 ETH
-                                    </p>
-                                </div>
-                                <p class="latest__time">
-                                    <svg width="15" height="17" viewBox="0 0 15 17" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M5.5 0.5C5.22386 0.5 5 0.723858 5 1C5 1.27614 5.22386 1.5 5.5 1.5H9.5C9.77614 1.5 10 1.27614 10 1C10 0.723858 9.77614 0.5 9.5 0.5H5.5ZM13.1563 2.42899C12.961 2.23373 12.6444 2.23373 12.4492 2.42899C12.2539 2.62426 12.2539 2.94084 12.4492 3.1361L13.8634 4.55031C14.0587 4.74558 14.3752 4.74558 14.5705 4.55031C14.7658 4.35505 14.7658 4.03847 14.5705 3.84321L13.1563 2.42899ZM7.5 4.5C7.22386 4.5 7 4.72386 7 5V10C7 10.2761 7.22386 10.5 7.5 10.5C7.77614 10.5 8 10.2761 8 10V5C8 4.72386 7.77614 4.5 7.5 4.5ZM7.5 16.5C11.366 16.5 14.5 13.366 14.5 9.5C14.5 5.63401 11.366 2.5 7.5 2.5C3.63401 2.5 0.5 5.63401 0.5 9.5C0.5 13.366 3.63401 16.5 7.5 16.5ZM7.5 15.5C4.18629 15.5 1.5 12.8137 1.5 9.5C1.5 6.18629 4.18629 3.5 7.5 3.5C10.8137 3.5 13.5 6.18629 13.5 9.5C13.5 12.8137 10.8137 15.5 7.5 15.5Z"
-                                            fill="#060714" />
-                                    </svg>
-                                    2:41 min left
+                        <div class="latest__info">
+                            <div class="latest__head">
+                                <h6>Vulputate felis purus viverra morbi facilisi eget</h6>
+                                <p class="latest__price">
+                                    3.19 ETH
                                 </p>
-                                <div class="latest__biding">
-                                    <div class="latest__avas">
-                                        <img src="img/latest-avas/01.png" alt="">
-                                        <img src="img/latest-avas/02.png" alt="">
-                                        <img src="img/latest-avas/03.png" alt="">
-                                        <img src="img/latest-avas/04.png" alt="">
-                                    </div>
-                                    <p class="latest__biding-num">
-                                        35 people are bidding
-                                    </p>
-                                    <div class="latest__fav">
-                                        <svg width="18" height="17" viewBox="0 0 18 17" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M4.83268 1C2.53185 1 0.666016 2.84667 0.666016 5.125C0.666016 6.96417 1.39518 11.3292 8.57268 15.7417C8.70125 15.8199 8.84885 15.8613 8.99935 15.8613C9.14985 15.8613 9.29745 15.8199 9.42602 15.7417C16.6035 11.3292 17.3327 6.96417 17.3327 5.125C17.3327 2.84667 15.4668 1 13.166 1C10.8652 1 8.99935 3.5 8.99935 3.5C8.99935 3.5 7.13352 1 4.83268 1Z"
-                                                stroke="#7780A1" stroke-linecap="round" stroke-linejoin="round" />
-                                        </svg>
-                                        120
-                                    </div>
-                                </div>
                             </div>
-                        </div>
-                        <div class="swiper-slide latest-slide">
-                            <img src="img/latest/Image.png" alt="Latest 1">
-                            <div class="latest__info">
-                                <div class="latest__head">
-                                    <h6>Vulputate felis purus viverra morbi facilisi eget</h6>
-                                    <p class="latest__price">
-                                        3.19 ETH
-                                    </p>
+                            <p class="latest__time">
+                                <svg width="15" height="17" viewBox="0 0 15 17" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M5.5 0.5C5.22386 0.5 5 0.723858 5 1C5 1.27614 5.22386 1.5 5.5 1.5H9.5C9.77614 1.5 10 1.27614 10 1C10 0.723858 9.77614 0.5 9.5 0.5H5.5ZM13.1563 2.42899C12.961 2.23373 12.6444 2.23373 12.4492 2.42899C12.2539 2.62426 12.2539 2.94084 12.4492 3.1361L13.8634 4.55031C14.0587 4.74558 14.3752 4.74558 14.5705 4.55031C14.7658 4.35505 14.7658 4.03847 14.5705 3.84321L13.1563 2.42899ZM7.5 4.5C7.22386 4.5 7 4.72386 7 5V10C7 10.2761 7.22386 10.5 7.5 10.5C7.77614 10.5 8 10.2761 8 10V5C8 4.72386 7.77614 4.5 7.5 4.5ZM7.5 16.5C11.366 16.5 14.5 13.366 14.5 9.5C14.5 5.63401 11.366 2.5 7.5 2.5C3.63401 2.5 0.5 5.63401 0.5 9.5C0.5 13.366 3.63401 16.5 7.5 16.5ZM7.5 15.5C4.18629 15.5 1.5 12.8137 1.5 9.5C1.5 6.18629 4.18629 3.5 7.5 3.5C10.8137 3.5 13.5 6.18629 13.5 9.5C13.5 12.8137 10.8137 15.5 7.5 15.5Z"
+                                        fill="#060714" />
+                                </svg>
+                                2:41 min left
+                            </p>
+                            <div class="latest__biding">
+                                <div class="latest__avas">
+                                    <img src="img/latest-avas/01.png" alt="">
+                                    <img src="img/latest-avas/02.png" alt="">
+                                    <img src="img/latest-avas/03.png" alt="">
+                                    <img src="img/latest-avas/04.png" alt="">
                                 </div>
-                                <p class="latest__time">
-                                    <svg width="15" height="17" viewBox="0 0 15 17" fill="none"
+                                <p class="latest__biding-num">
+                                    35 people are bidding
+                                </p>
+                                <div class="latest__fav">
+                                    <svg width="18" height="17" viewBox="0 0 18 17" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
-                                            d="M5.5 0.5C5.22386 0.5 5 0.723858 5 1C5 1.27614 5.22386 1.5 5.5 1.5H9.5C9.77614 1.5 10 1.27614 10 1C10 0.723858 9.77614 0.5 9.5 0.5H5.5ZM13.1563 2.42899C12.961 2.23373 12.6444 2.23373 12.4492 2.42899C12.2539 2.62426 12.2539 2.94084 12.4492 3.1361L13.8634 4.55031C14.0587 4.74558 14.3752 4.74558 14.5705 4.55031C14.7658 4.35505 14.7658 4.03847 14.5705 3.84321L13.1563 2.42899ZM7.5 4.5C7.22386 4.5 7 4.72386 7 5V10C7 10.2761 7.22386 10.5 7.5 10.5C7.77614 10.5 8 10.2761 8 10V5C8 4.72386 7.77614 4.5 7.5 4.5ZM7.5 16.5C11.366 16.5 14.5 13.366 14.5 9.5C14.5 5.63401 11.366 2.5 7.5 2.5C3.63401 2.5 0.5 5.63401 0.5 9.5C0.5 13.366 3.63401 16.5 7.5 16.5ZM7.5 15.5C4.18629 15.5 1.5 12.8137 1.5 9.5C1.5 6.18629 4.18629 3.5 7.5 3.5C10.8137 3.5 13.5 6.18629 13.5 9.5C13.5 12.8137 10.8137 15.5 7.5 15.5Z"
-                                            fill="#060714" />
+                                            d="M4.83268 1C2.53185 1 0.666016 2.84667 0.666016 5.125C0.666016 6.96417 1.39518 11.3292 8.57268 15.7417C8.70125 15.8199 8.84885 15.8613 8.99935 15.8613C9.14985 15.8613 9.29745 15.8199 9.42602 15.7417C16.6035 11.3292 17.3327 6.96417 17.3327 5.125C17.3327 2.84667 15.4668 1 13.166 1C10.8652 1 8.99935 3.5 8.99935 3.5C8.99935 3.5 7.13352 1 4.83268 1Z"
+                                            stroke="#7780A1" stroke-linecap="round" stroke-linejoin="round" />
                                     </svg>
-                                    2:41 min left
-                                </p>
-                                <div class="latest__biding">
-                                    <div class="latest__avas">
-                                        <img src="img/latest-avas/01.png" alt="">
-                                        <img src="img/latest-avas/02.png" alt="">
-                                        <img src="img/latest-avas/03.png" alt="">
-                                        <img src="img/latest-avas/04.png" alt="">
-                                    </div>
-                                    <p class="latest__biding-num">
-                                        35 people are bidding
-                                    </p>
-                                    <div class="latest__fav">
-                                        <svg width="18" height="17" viewBox="0 0 18 17" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M4.83268 1C2.53185 1 0.666016 2.84667 0.666016 5.125C0.666016 6.96417 1.39518 11.3292 8.57268 15.7417C8.70125 15.8199 8.84885 15.8613 8.99935 15.8613C9.14985 15.8613 9.29745 15.8199 9.42602 15.7417C16.6035 11.3292 17.3327 6.96417 17.3327 5.125C17.3327 2.84667 15.4668 1 13.166 1C10.8652 1 8.99935 3.5 8.99935 3.5C8.99935 3.5 7.13352 1 4.83268 1Z"
-                                                stroke="#7780A1" stroke-linecap="round" stroke-linejoin="round" />
-                                        </svg>
-                                        120
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide latest-slide">
-                            <img src="img/latest/Image.png" alt="Latest 1">
-                            <div class="latest__info">
-                                <div class="latest__head">
-                                    <h6>Vulputate felis purus viverra morbi facilisi eget</h6>
-                                    <p class="latest__price">
-                                        3.19 ETH
-                                    </p>
-                                </div>
-                                <p class="latest__time">
-                                    <svg width="15" height="17" viewBox="0 0 15 17" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M5.5 0.5C5.22386 0.5 5 0.723858 5 1C5 1.27614 5.22386 1.5 5.5 1.5H9.5C9.77614 1.5 10 1.27614 10 1C10 0.723858 9.77614 0.5 9.5 0.5H5.5ZM13.1563 2.42899C12.961 2.23373 12.6444 2.23373 12.4492 2.42899C12.2539 2.62426 12.2539 2.94084 12.4492 3.1361L13.8634 4.55031C14.0587 4.74558 14.3752 4.74558 14.5705 4.55031C14.7658 4.35505 14.7658 4.03847 14.5705 3.84321L13.1563 2.42899ZM7.5 4.5C7.22386 4.5 7 4.72386 7 5V10C7 10.2761 7.22386 10.5 7.5 10.5C7.77614 10.5 8 10.2761 8 10V5C8 4.72386 7.77614 4.5 7.5 4.5ZM7.5 16.5C11.366 16.5 14.5 13.366 14.5 9.5C14.5 5.63401 11.366 2.5 7.5 2.5C3.63401 2.5 0.5 5.63401 0.5 9.5C0.5 13.366 3.63401 16.5 7.5 16.5ZM7.5 15.5C4.18629 15.5 1.5 12.8137 1.5 9.5C1.5 6.18629 4.18629 3.5 7.5 3.5C10.8137 3.5 13.5 6.18629 13.5 9.5C13.5 12.8137 10.8137 15.5 7.5 15.5Z"
-                                            fill="#060714" />
-                                    </svg>
-                                    2:41 min left
-                                </p>
-                                <div class="latest__biding">
-                                    <div class="latest__avas">
-                                        <img src="img/latest-avas/01.png" alt="">
-                                        <img src="img/latest-avas/02.png" alt="">
-                                        <img src="img/latest-avas/03.png" alt="">
-                                        <img src="img/latest-avas/04.png" alt="">
-                                    </div>
-                                    <p class="latest__biding-num">
-                                        35 people are bidding
-                                    </p>
-                                    <div class="latest__fav">
-                                        <svg width="18" height="17" viewBox="0 0 18 17" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M4.83268 1C2.53185 1 0.666016 2.84667 0.666016 5.125C0.666016 6.96417 1.39518 11.3292 8.57268 15.7417C8.70125 15.8199 8.84885 15.8613 8.99935 15.8613C9.14985 15.8613 9.29745 15.8199 9.42602 15.7417C16.6035 11.3292 17.3327 6.96417 17.3327 5.125C17.3327 2.84667 15.4668 1 13.166 1C10.8652 1 8.99935 3.5 8.99935 3.5C8.99935 3.5 7.13352 1 4.83268 1Z"
-                                                stroke="#7780A1" stroke-linecap="round" stroke-linejoin="round" />
-                                        </svg>
-                                        120
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide latest-slide">
-                            <img src="img/latest/Image.png" alt="Latest 1">
-                            <div class="latest__info">
-                                <div class="latest__head">
-                                    <h6>Vulputate felis purus viverra morbi facilisi eget</h6>
-                                    <p class="latest__price">
-                                        3.19 ETH
-                                    </p>
-                                </div>
-                                <p class="latest__time">
-                                    <svg width="15" height="17" viewBox="0 0 15 17" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M5.5 0.5C5.22386 0.5 5 0.723858 5 1C5 1.27614 5.22386 1.5 5.5 1.5H9.5C9.77614 1.5 10 1.27614 10 1C10 0.723858 9.77614 0.5 9.5 0.5H5.5ZM13.1563 2.42899C12.961 2.23373 12.6444 2.23373 12.4492 2.42899C12.2539 2.62426 12.2539 2.94084 12.4492 3.1361L13.8634 4.55031C14.0587 4.74558 14.3752 4.74558 14.5705 4.55031C14.7658 4.35505 14.7658 4.03847 14.5705 3.84321L13.1563 2.42899ZM7.5 4.5C7.22386 4.5 7 4.72386 7 5V10C7 10.2761 7.22386 10.5 7.5 10.5C7.77614 10.5 8 10.2761 8 10V5C8 4.72386 7.77614 4.5 7.5 4.5ZM7.5 16.5C11.366 16.5 14.5 13.366 14.5 9.5C14.5 5.63401 11.366 2.5 7.5 2.5C3.63401 2.5 0.5 5.63401 0.5 9.5C0.5 13.366 3.63401 16.5 7.5 16.5ZM7.5 15.5C4.18629 15.5 1.5 12.8137 1.5 9.5C1.5 6.18629 4.18629 3.5 7.5 3.5C10.8137 3.5 13.5 6.18629 13.5 9.5C13.5 12.8137 10.8137 15.5 7.5 15.5Z"
-                                            fill="#060714" />
-                                    </svg>
-                                    2:41 min left
-                                </p>
-                                <div class="latest__biding">
-                                    <div class="latest__avas">
-                                        <img src="img/latest-avas/01.png" alt="">
-                                        <img src="img/latest-avas/02.png" alt="">
-                                        <img src="img/latest-avas/03.png" alt="">
-                                        <img src="img/latest-avas/04.png" alt="">
-                                    </div>
-                                    <p class="latest__biding-num">
-                                        35 people are bidding
-                                    </p>
-                                    <div class="latest__fav">
-                                        <svg width="18" height="17" viewBox="0 0 18 17" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M4.83268 1C2.53185 1 0.666016 2.84667 0.666016 5.125C0.666016 6.96417 1.39518 11.3292 8.57268 15.7417C8.70125 15.8199 8.84885 15.8613 8.99935 15.8613C9.14985 15.8613 9.29745 15.8199 9.42602 15.7417C16.6035 11.3292 17.3327 6.96417 17.3327 5.125C17.3327 2.84667 15.4668 1 13.166 1C10.8652 1 8.99935 3.5 8.99935 3.5C8.99935 3.5 7.13352 1 4.83268 1Z"
-                                                stroke="#7780A1" stroke-linecap="round" stroke-linejoin="round" />
-                                        </svg>
-                                        120
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide latest-slide">
-                            <img src="img/latest/Image.png" alt="Latest 1">
-                            <div class="latest__info">
-                                <div class="latest__head">
-                                    <h6>Vulputate felis purus viverra morbi facilisi eget</h6>
-                                    <p class="latest__price">
-                                        3.19 ETH
-                                    </p>
-                                </div>
-                                <p class="latest__time">
-                                    <svg width="15" height="17" viewBox="0 0 15 17" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M5.5 0.5C5.22386 0.5 5 0.723858 5 1C5 1.27614 5.22386 1.5 5.5 1.5H9.5C9.77614 1.5 10 1.27614 10 1C10 0.723858 9.77614 0.5 9.5 0.5H5.5ZM13.1563 2.42899C12.961 2.23373 12.6444 2.23373 12.4492 2.42899C12.2539 2.62426 12.2539 2.94084 12.4492 3.1361L13.8634 4.55031C14.0587 4.74558 14.3752 4.74558 14.5705 4.55031C14.7658 4.35505 14.7658 4.03847 14.5705 3.84321L13.1563 2.42899ZM7.5 4.5C7.22386 4.5 7 4.72386 7 5V10C7 10.2761 7.22386 10.5 7.5 10.5C7.77614 10.5 8 10.2761 8 10V5C8 4.72386 7.77614 4.5 7.5 4.5ZM7.5 16.5C11.366 16.5 14.5 13.366 14.5 9.5C14.5 5.63401 11.366 2.5 7.5 2.5C3.63401 2.5 0.5 5.63401 0.5 9.5C0.5 13.366 3.63401 16.5 7.5 16.5ZM7.5 15.5C4.18629 15.5 1.5 12.8137 1.5 9.5C1.5 6.18629 4.18629 3.5 7.5 3.5C10.8137 3.5 13.5 6.18629 13.5 9.5C13.5 12.8137 10.8137 15.5 7.5 15.5Z"
-                                            fill="#060714" />
-                                    </svg>
-                                    2:41 min left
-                                </p>
-                                <div class="latest__biding">
-                                    <div class="latest__avas">
-                                        <img src="img/latest-avas/01.png" alt="">
-                                        <img src="img/latest-avas/02.png" alt="">
-                                        <img src="img/latest-avas/03.png" alt="">
-                                        <img src="img/latest-avas/04.png" alt="">
-                                    </div>
-                                    <p class="latest__biding-num">
-                                        35 people are bidding
-                                    </p>
-                                    <div class="latest__fav">
-                                        <svg width="18" height="17" viewBox="0 0 18 17" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M4.83268 1C2.53185 1 0.666016 2.84667 0.666016 5.125C0.666016 6.96417 1.39518 11.3292 8.57268 15.7417C8.70125 15.8199 8.84885 15.8613 8.99935 15.8613C9.14985 15.8613 9.29745 15.8199 9.42602 15.7417C16.6035 11.3292 17.3327 6.96417 17.3327 5.125C17.3327 2.84667 15.4668 1 13.166 1C10.8652 1 8.99935 3.5 8.99935 3.5C8.99935 3.5 7.13352 1 4.83268 1Z"
-                                                stroke="#7780A1" stroke-linecap="round" stroke-linejoin="round" />
-                                        </svg>
-                                        120
-                                    </div>
+                                    120
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <div class="swiper-slide latest-slide">
+                        <div class="latest__thumbnail_wrap">
+                            <img src="img/latest/Image-1.png" class="latest__thumbnail" alt="Latest 2">
+                        </div>
+                        <div class="latest__info">
+                            <div class="latest__head">
+                                <h6>Vulputate felis purus viverra morbi facilisi eget</h6>
+                                <p class="latest__price">
+                                    3.19 ETH
+                                </p>
+                            </div>
+                            <p class="latest__time">
+                                <svg width="15" height="17" viewBox="0 0 15 17" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M5.5 0.5C5.22386 0.5 5 0.723858 5 1C5 1.27614 5.22386 1.5 5.5 1.5H9.5C9.77614 1.5 10 1.27614 10 1C10 0.723858 9.77614 0.5 9.5 0.5H5.5ZM13.1563 2.42899C12.961 2.23373 12.6444 2.23373 12.4492 2.42899C12.2539 2.62426 12.2539 2.94084 12.4492 3.1361L13.8634 4.55031C14.0587 4.74558 14.3752 4.74558 14.5705 4.55031C14.7658 4.35505 14.7658 4.03847 14.5705 3.84321L13.1563 2.42899ZM7.5 4.5C7.22386 4.5 7 4.72386 7 5V10C7 10.2761 7.22386 10.5 7.5 10.5C7.77614 10.5 8 10.2761 8 10V5C8 4.72386 7.77614 4.5 7.5 4.5ZM7.5 16.5C11.366 16.5 14.5 13.366 14.5 9.5C14.5 5.63401 11.366 2.5 7.5 2.5C3.63401 2.5 0.5 5.63401 0.5 9.5C0.5 13.366 3.63401 16.5 7.5 16.5ZM7.5 15.5C4.18629 15.5 1.5 12.8137 1.5 9.5C1.5 6.18629 4.18629 3.5 7.5 3.5C10.8137 3.5 13.5 6.18629 13.5 9.5C13.5 12.8137 10.8137 15.5 7.5 15.5Z"
+                                        fill="#060714" />
+                                </svg>
+                                2:41 min left
+                            </p>
+                            <div class="latest__biding">
+                                <div class="latest__avas">
+                                    <img src="img/latest-avas/01.png" alt="">
+                                    <img src="img/latest-avas/02.png" alt="">
+                                    <img src="img/latest-avas/03.png" alt="">
+                                    <img src="img/latest-avas/04.png" alt="">
+                                </div>
+                                <p class="latest__biding-num">
+                                    35 people are bidding
+                                </p>
+                                <div class="latest__fav">
+                                    <svg width="18" height="17" viewBox="0 0 18 17" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M4.83268 1C2.53185 1 0.666016 2.84667 0.666016 5.125C0.666016 6.96417 1.39518 11.3292 8.57268 15.7417C8.70125 15.8199 8.84885 15.8613 8.99935 15.8613C9.14985 15.8613 9.29745 15.8199 9.42602 15.7417C16.6035 11.3292 17.3327 6.96417 17.3327 5.125C17.3327 2.84667 15.4668 1 13.166 1C10.8652 1 8.99935 3.5 8.99935 3.5C8.99935 3.5 7.13352 1 4.83268 1Z"
+                                            stroke="#7780A1" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    120
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide latest-slide">
+                        <div class="latest__thumbnail_wrap">
+                            <img src="img/latest/Image-2.png" class="latest__thumbnail" alt="Latest 3">
+                        </div>
+                        <div class="latest__info">
+                            <div class="latest__head">
+                                <h6>Vulputate felis purus viverra morbi facilisi eget</h6>
+                                <p class="latest__price">
+                                    3.19 ETH
+                                </p>
+                            </div>
+                            <p class="latest__time">
+                                <svg width="15" height="17" viewBox="0 0 15 17" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M5.5 0.5C5.22386 0.5 5 0.723858 5 1C5 1.27614 5.22386 1.5 5.5 1.5H9.5C9.77614 1.5 10 1.27614 10 1C10 0.723858 9.77614 0.5 9.5 0.5H5.5ZM13.1563 2.42899C12.961 2.23373 12.6444 2.23373 12.4492 2.42899C12.2539 2.62426 12.2539 2.94084 12.4492 3.1361L13.8634 4.55031C14.0587 4.74558 14.3752 4.74558 14.5705 4.55031C14.7658 4.35505 14.7658 4.03847 14.5705 3.84321L13.1563 2.42899ZM7.5 4.5C7.22386 4.5 7 4.72386 7 5V10C7 10.2761 7.22386 10.5 7.5 10.5C7.77614 10.5 8 10.2761 8 10V5C8 4.72386 7.77614 4.5 7.5 4.5ZM7.5 16.5C11.366 16.5 14.5 13.366 14.5 9.5C14.5 5.63401 11.366 2.5 7.5 2.5C3.63401 2.5 0.5 5.63401 0.5 9.5C0.5 13.366 3.63401 16.5 7.5 16.5ZM7.5 15.5C4.18629 15.5 1.5 12.8137 1.5 9.5C1.5 6.18629 4.18629 3.5 7.5 3.5C10.8137 3.5 13.5 6.18629 13.5 9.5C13.5 12.8137 10.8137 15.5 7.5 15.5Z"
+                                        fill="#060714" />
+                                </svg>
+                                2:41 min left
+                            </p>
+                            <div class="latest__biding">
+                                <div class="latest__avas">
+                                    <img src="img/latest-avas/01.png" alt="">
+                                    <img src="img/latest-avas/02.png" alt="">
+                                    <img src="img/latest-avas/03.png" alt="">
+                                    <img src="img/latest-avas/04.png" alt="">
+                                </div>
+                                <p class="latest__biding-num">
+                                    35 people are bidding
+                                </p>
+                                <div class="latest__fav">
+                                    <svg width="18" height="17" viewBox="0 0 18 17" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M4.83268 1C2.53185 1 0.666016 2.84667 0.666016 5.125C0.666016 6.96417 1.39518 11.3292 8.57268 15.7417C8.70125 15.8199 8.84885 15.8613 8.99935 15.8613C9.14985 15.8613 9.29745 15.8199 9.42602 15.7417C16.6035 11.3292 17.3327 6.96417 17.3327 5.125C17.3327 2.84667 15.4668 1 13.166 1C10.8652 1 8.99935 3.5 8.99935 3.5C8.99935 3.5 7.13352 1 4.83268 1Z"
+                                            stroke="#7780A1" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    120
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide latest-slide">
+                        <div class="latest__thumbnail_wrap">
+                            <img src="img/latest/Image-3.png" class="latest__thumbnail" alt="Latest 1">
+                        </div>
+                        <div class="latest__info">
+                            <div class="latest__head">
+                                <h6>Vulputate felis purus viverra morbi facilisi eget</h6>
+                                <p class="latest__price">
+                                    3.19 ETH
+                                </p>
+                            </div>
+                            <p class="latest__time">
+                                <svg width="15" height="17" viewBox="0 0 15 17" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M5.5 0.5C5.22386 0.5 5 0.723858 5 1C5 1.27614 5.22386 1.5 5.5 1.5H9.5C9.77614 1.5 10 1.27614 10 1C10 0.723858 9.77614 0.5 9.5 0.5H5.5ZM13.1563 2.42899C12.961 2.23373 12.6444 2.23373 12.4492 2.42899C12.2539 2.62426 12.2539 2.94084 12.4492 3.1361L13.8634 4.55031C14.0587 4.74558 14.3752 4.74558 14.5705 4.55031C14.7658 4.35505 14.7658 4.03847 14.5705 3.84321L13.1563 2.42899ZM7.5 4.5C7.22386 4.5 7 4.72386 7 5V10C7 10.2761 7.22386 10.5 7.5 10.5C7.77614 10.5 8 10.2761 8 10V5C8 4.72386 7.77614 4.5 7.5 4.5ZM7.5 16.5C11.366 16.5 14.5 13.366 14.5 9.5C14.5 5.63401 11.366 2.5 7.5 2.5C3.63401 2.5 0.5 5.63401 0.5 9.5C0.5 13.366 3.63401 16.5 7.5 16.5ZM7.5 15.5C4.18629 15.5 1.5 12.8137 1.5 9.5C1.5 6.18629 4.18629 3.5 7.5 3.5C10.8137 3.5 13.5 6.18629 13.5 9.5C13.5 12.8137 10.8137 15.5 7.5 15.5Z"
+                                        fill="#060714" />
+                                </svg>
+                                2:41 min left
+                            </p>
+                            <div class="latest__biding">
+                                <div class="latest__avas">
+                                    <img src="img/latest-avas/01.png" alt="">
+                                    <img src="img/latest-avas/02.png" alt="">
+                                    <img src="img/latest-avas/03.png" alt="">
+                                    <img src="img/latest-avas/04.png" alt="">
+                                </div>
+                                <p class="latest__biding-num">
+                                    35 people are bidding
+                                </p>
+                                <div class="latest__fav">
+                                    <svg width="18" height="17" viewBox="0 0 18 17" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M4.83268 1C2.53185 1 0.666016 2.84667 0.666016 5.125C0.666016 6.96417 1.39518 11.3292 8.57268 15.7417C8.70125 15.8199 8.84885 15.8613 8.99935 15.8613C9.14985 15.8613 9.29745 15.8199 9.42602 15.7417C16.6035 11.3292 17.3327 6.96417 17.3327 5.125C17.3327 2.84667 15.4668 1 13.166 1C10.8652 1 8.99935 3.5 8.99935 3.5C8.99935 3.5 7.13352 1 4.83268 1Z"
+                                            stroke="#7780A1" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    120
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide latest-slide">
+                        <div class="latest__thumbnail_wrap">
+                            <img src="img/latest/Image-4.png" class="latest__thumbnail" alt="Latest 1">
+                        </div>
+                        <div class="latest__info">
+                            <div class="latest__head">
+                                <h6>Vulputate felis purus viverra morbi facilisi eget</h6>
+                                <p class="latest__price">
+                                    3.19 ETH
+                                </p>
+                            </div>
+                            <p class="latest__time">
+                                <svg width="15" height="17" viewBox="0 0 15 17" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M5.5 0.5C5.22386 0.5 5 0.723858 5 1C5 1.27614 5.22386 1.5 5.5 1.5H9.5C9.77614 1.5 10 1.27614 10 1C10 0.723858 9.77614 0.5 9.5 0.5H5.5ZM13.1563 2.42899C12.961 2.23373 12.6444 2.23373 12.4492 2.42899C12.2539 2.62426 12.2539 2.94084 12.4492 3.1361L13.8634 4.55031C14.0587 4.74558 14.3752 4.74558 14.5705 4.55031C14.7658 4.35505 14.7658 4.03847 14.5705 3.84321L13.1563 2.42899ZM7.5 4.5C7.22386 4.5 7 4.72386 7 5V10C7 10.2761 7.22386 10.5 7.5 10.5C7.77614 10.5 8 10.2761 8 10V5C8 4.72386 7.77614 4.5 7.5 4.5ZM7.5 16.5C11.366 16.5 14.5 13.366 14.5 9.5C14.5 5.63401 11.366 2.5 7.5 2.5C3.63401 2.5 0.5 5.63401 0.5 9.5C0.5 13.366 3.63401 16.5 7.5 16.5ZM7.5 15.5C4.18629 15.5 1.5 12.8137 1.5 9.5C1.5 6.18629 4.18629 3.5 7.5 3.5C10.8137 3.5 13.5 6.18629 13.5 9.5C13.5 12.8137 10.8137 15.5 7.5 15.5Z"
+                                        fill="#060714" />
+                                </svg>
+                                2:41 min left
+                            </p>
+                            <div class="latest__biding">
+                                <div class="latest__avas">
+                                    <img src="img/latest-avas/01.png" alt="">
+                                    <img src="img/latest-avas/02.png" alt="">
+                                    <img src="img/latest-avas/03.png" alt="">
+                                    <img src="img/latest-avas/04.png" alt="">
+                                </div>
+                                <p class="latest__biding-num">
+                                    35 people are bidding
+                                </p>
+                                <div class="latest__fav">
+                                    <svg width="18" height="17" viewBox="0 0 18 17" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M4.83268 1C2.53185 1 0.666016 2.84667 0.666016 5.125C0.666016 6.96417 1.39518 11.3292 8.57268 15.7417C8.70125 15.8199 8.84885 15.8613 8.99935 15.8613C9.14985 15.8613 9.29745 15.8199 9.42602 15.7417C16.6035 11.3292 17.3327 6.96417 17.3327 5.125C17.3327 2.84667 15.4668 1 13.166 1C10.8652 1 8.99935 3.5 8.99935 3.5C8.99935 3.5 7.13352 1 4.83268 1Z"
+                                            stroke="#7780A1" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    120
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide latest-slide">
+                        <div class="latest__thumbnail_wrap">
+                            <img src="img/latest/Image-2.png" class="latest__thumbnail" alt="Latest 1">
+                        </div>
+                        <div class="latest__info">
+                            <div class="latest__head">
+                                <h6>Vulputate felis purus viverra morbi facilisi eget</h6>
+                                <p class="latest__price">
+                                    3.19 ETH
+                                </p>
+                            </div>
+                            <p class="latest__time">
+                                <svg width="15" height="17" viewBox="0 0 15 17" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M5.5 0.5C5.22386 0.5 5 0.723858 5 1C5 1.27614 5.22386 1.5 5.5 1.5H9.5C9.77614 1.5 10 1.27614 10 1C10 0.723858 9.77614 0.5 9.5 0.5H5.5ZM13.1563 2.42899C12.961 2.23373 12.6444 2.23373 12.4492 2.42899C12.2539 2.62426 12.2539 2.94084 12.4492 3.1361L13.8634 4.55031C14.0587 4.74558 14.3752 4.74558 14.5705 4.55031C14.7658 4.35505 14.7658 4.03847 14.5705 3.84321L13.1563 2.42899ZM7.5 4.5C7.22386 4.5 7 4.72386 7 5V10C7 10.2761 7.22386 10.5 7.5 10.5C7.77614 10.5 8 10.2761 8 10V5C8 4.72386 7.77614 4.5 7.5 4.5ZM7.5 16.5C11.366 16.5 14.5 13.366 14.5 9.5C14.5 5.63401 11.366 2.5 7.5 2.5C3.63401 2.5 0.5 5.63401 0.5 9.5C0.5 13.366 3.63401 16.5 7.5 16.5ZM7.5 15.5C4.18629 15.5 1.5 12.8137 1.5 9.5C1.5 6.18629 4.18629 3.5 7.5 3.5C10.8137 3.5 13.5 6.18629 13.5 9.5C13.5 12.8137 10.8137 15.5 7.5 15.5Z"
+                                        fill="#060714" />
+                                </svg>
+                                2:41 min left
+                            </p>
+                            <div class="latest__biding">
+                                <div class="latest__avas">
+                                    <img src="img/latest-avas/01.png" alt="">
+                                    <img src="img/latest-avas/02.png" alt="">
+                                    <img src="img/latest-avas/03.png" alt="">
+                                    <img src="img/latest-avas/04.png" alt="">
+                                </div>
+                                <p class="latest__biding-num">
+                                    35 people are bidding
+                                </p>
+                                <div class="latest__fav">
+                                    <svg width="18" height="17" viewBox="0 0 18 17" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M4.83268 1C2.53185 1 0.666016 2.84667 0.666016 5.125C0.666016 6.96417 1.39518 11.3292 8.57268 15.7417C8.70125 15.8199 8.84885 15.8613 8.99935 15.8613C9.14985 15.8613 9.29745 15.8199 9.42602 15.7417C16.6035 11.3292 17.3327 6.96417 17.3327 5.125C17.3327 2.84667 15.4668 1 13.166 1C10.8652 1 8.99935 3.5 8.99935 3.5C8.99935 3.5 7.13352 1 4.83268 1Z"
+                                            stroke="#7780A1" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    120
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev latest__btn">
+                    <svg width="8" height="16" viewBox="0 0 8 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M1.13968 5.06064L5.54906 0.305449C5.92592 -0.100939 6.53787 -0.101926 6.91589 0.303163C7.29387 0.708303 7.29484 1.36612 6.91802 1.77251L2.50564 6.53082C2.13482 6.92733 1.93245 7.45123 1.93288 8.00904C1.93332 8.56686 2.13651 9.09034 2.50507 9.48306L6.91691 14.2264C7.29435 14.6322 7.2943 15.29 6.91686 15.6957C6.53947 16.1015 5.92752 16.1014 5.55012 15.6957L1.14132 10.9556C0.407311 10.1734 0.000923387 9.12649 5.26966e-06 8.01081C-0.000912848 6.89513 0.403832 5.84744 1.13968 5.06064Z"
+                            fill="#060714" />
+                    </svg>
+                </div>
+                <div class="swiper-button-next latest__btn">
+                    <svg width="8" height="16" viewBox="0 0 8 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M6.06033 10.9394L1.65095 15.6946C1.27408 16.1009 0.662133 16.1019 0.28411 15.6968C-0.0938641 15.2917 -0.0948308 14.6339 0.281984 14.2275L4.69436 9.46918C5.06518 9.07267 5.26756 8.54877 5.26712 7.99096C5.26669 7.43314 5.06349 6.90966 4.69494 6.51694L0.283096 1.77359C-0.0943471 1.36782 -0.0942985 0.710009 0.283144 0.304297C0.660539 -0.101467 1.27249 -0.101415 1.64988 0.304349L6.05868 5.04443C6.79269 5.82655 7.19908 6.87351 7.2 7.98919C7.20092 9.10487 6.79617 10.1526 6.06033 10.9394Z"
+                            fill="#060714" />
+                    </svg>
                 </div>
             </div>
+        </div>
+    </section>
+    
+    <section class="start">
+        <div class="container">
+            
         </div>
     </section>
 

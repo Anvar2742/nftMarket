@@ -58,13 +58,28 @@ window.addEventListener("load", function () {
     setTimeout(() => {
         heroNfts.classList.add('floating__nfts')
     }, 1500);
+
+
+    var swiperWrap = document.getElementById('swiperWrap')
+
+    for (let i = 0; i < swiperWrap.children.length; i++) {
+        const el = swiperWrap.children[i]
+
+        var imgContainer = el.getElementsByClassName('latest__thumbnail_wrap')
+        var elImgClone = imgContainer[0].children[0].cloneNode()
+
+        elImgClone.classList.remove('latest__thumbnail')
+        elImgClone.classList.add('latest__thumbnail-reflect')
+
+        imgContainer[0].append(elImgClone)
+    }
 })
 
 const swiper = new Swiper('.swiper', {
     slidesPerView: 3,
     spaceBetween: 70,
     loop: true,
-    // loopedSlides: 5,
+    loopedSlides: 5,
     watchSlidesProgress: true,
     centerSlides: true,
 
