@@ -204,6 +204,10 @@ h6 {
     margin: auto;
 }
 
+.hero__info .subtitle {
+    text-align: center;
+}
+
 .filter {
     background: #FFFFFF;
     box-shadow: 0px 25px 75px rgba(6, 7, 20, 0.1);
