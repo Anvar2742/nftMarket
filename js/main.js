@@ -105,8 +105,8 @@ for (let i = 1, deg = 45; i < wheel.children.length; i++, deg += 45) {
     el.style.background = '#' + randomColor
 }
 
-var min = Math.ceil(500);
-var max = Math.floor(1500);
+var min = Math.ceil(1500);
+var max = Math.floor(2500);
 var randomDeg = Math.floor(Math.random() * (max - min + 1)) + min;
 
 wheelBtn.addEventListener('click', function () {
