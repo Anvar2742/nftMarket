@@ -89,3 +89,30 @@ const swiper = new Swiper('.swiper', {
         prevEl: '.swiper-button-prev',
     },
 });
+
+
+/* Spinning wheel */
+
+var wheel = document.getElementById('wheel')
+var wheelBtn = document.getElementById('wheelBtn')
+
+for (let i = 1, deg = 45; i < wheel.children.length; i++, deg += 45) {
+    const el = wheel.children[i];
+    const randomColor = Math.floor(Math.random() * 16777215).toString(16)
+    console.log(randomColor)
+
+    el.style.transform = `rotate(${deg}deg)`
+    el.style.background = '#' + randomColor
+}
+
+var min = Math.ceil(500);
+var max = Math.floor(1500);
+var randomDeg = Math.floor(Math.random() * (max - min + 1)) + min;
+
+wheelBtn.addEventListener('click', function () {
+    randomDeg += Math.floor(Math.random() * (max - min + 1)) + min;
+
+    wheel.style.transform = `rotate(${randomDeg}deg)`
+})
+
+/* Spinning wheel */
